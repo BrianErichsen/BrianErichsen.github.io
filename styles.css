@@ -1,0 +1,48 @@
+#description {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ccc;
+}
+#main {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+#mapDiv {
+    width: 100%;
+    height: 600px;
+    display: inline-block;
+}
+#chartDiv {
+    width: 60%;
+    height: 850px;
+    display: inline-block;
+}
+
+#timeline {
+    height: 300px;
+}
+
+/* Style for highlighting states on hover */
+.state-highlight {
+    fill: orange; /* Orange color for the outline */
+    stroke-width: 10px; /* Width of the outline */
+}
+
+/* Bar charts Figures -- For confirmed cases and deaths*/
+.bar {
+    transition: fill 0.2s;
+}
+.highlight {
+    fill: orange;
+}
+
+/* I think this was causing problem so I uncommet it. Feel free to undo it
+ svg {
+    border: 1px solid black;
+    display: block;
+    width: 100%;
+} */

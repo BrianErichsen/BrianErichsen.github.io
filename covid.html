@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>COVID 19 Visualization</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="description">
+            <p>
+                The map below shows a heat map of confirmed COVID-19 cases in January 2019. The color intensity represents the number of confirmed cases (darker red means more cases). The black circles represent the proportion of deaths in each state (larger circles means more deaths).
+            </p>
+        </div>
+        <svg id="confirmedChart" width="600" height="400"></svg>
+        <svg id="deathChart" width="600" height="400"></svg>
+        <div id="main">
+            <div id="mapDiv">
+                <svg id="map"></svg>
+            </div>
+            <svg id="stateDetailsChart" width="600" height="400"></svg>
+
+        </div>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/topojson@3"></script>
+        <script type="module" src="script.js"></script>
+    </body>
+    </html>
